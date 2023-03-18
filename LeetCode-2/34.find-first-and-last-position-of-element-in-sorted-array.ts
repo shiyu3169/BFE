@@ -49,6 +49,7 @@ function searchMin(
         return searchMin(nums, target, left, mid)
       }
     } else {
+      // We are sure the min will be on the right half
       left = mid + 1
     }
   }
@@ -70,6 +71,7 @@ function searchMax(
         return searchMax(nums, target, mid + 1, right)
       }
     } else {
+      // We are sure the max is on the left half
       right = mid - 1
     }
   }
