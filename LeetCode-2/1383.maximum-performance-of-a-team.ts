@@ -46,7 +46,6 @@ function maxPerformance(
   let s = 0
   let result = BigInt(0)
   const minPriorityQueue = new MinPriorityQueue()
-  console.log(performance)
   for (const worker of performance) {
     if (minPriorityQueue.size() === k) {
       s -= minPriorityQueue.dequeue().element
